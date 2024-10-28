@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.backgroundContainer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+  background-image: url(./images/abstractBkgDark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* FORM FONTS and BACKGROUNDS */
+.audiowide-regular,
+form,
+select,
+input,
+textarea,
+button {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+select,
+input,
+textarea,
+button {
+  background-color: #aaa;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  background-color: rgb(255, 136, 0);
+  cursor: pointer;
+}
+
+/* TOP CONTAINER and FORM SETTINGS */
+.inputContainer {
+  height: 40vh;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/dollarBkgTop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 5px 5px 0px #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+
+.formFields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.topFields,
+.bottomFields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+}
+
+#amount {
+  width: 30%;
+}
+
+/* TRANSACTION LEDGER */
+
+.outputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.transactionLedger {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 10px;
+  height: 80%;
+  width: 80vw;
+}
