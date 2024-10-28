@@ -3,14 +3,26 @@ import Expense from "./modules/expense.js";
 
 // Grab items from the DOM
 const form = document.querySelector("form");
-const transactionType = document.querySelector("#transactionType");
-const date = document.querySelector("#date");
-const transactionDetails = document.querySelector("#transactionDetails");
-const amount = document.querySelector("#amount");
+const transactionType = document.querySelector(
+  "#transactionType"
+) as HTMLSelectElement;
+const date = document.querySelector("#date") as HTMLInputElement;
+const transactionDetails = document.querySelector(
+  "#transactionDetails"
+) as HTMLTextAreaElement;
+const amount = document.querySelector("#amount") as HTMLInputElement;
 // list template instance
 const ul = document.querySelector("ul");
 
-console.log(form, transactionType, date, transactionDetails, amount, ul);
+form?.addEventListener("submit", (evt: Event) => {
+  evt.preventDefault();
+  console.log(
+    transactionType.value,
+    date.valueAsDate,
+    transactionDetails.value,
+    amount.valueAsNumber
+  );
+});
 
 /* let salaryFebruary = new Income("February salary", 3000, "2021-02-28");
 let salaryMarch = new Income("March salary", 3000, "2021-03-31");
