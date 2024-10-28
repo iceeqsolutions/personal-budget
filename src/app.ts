@@ -26,13 +26,13 @@ form?.addEventListener("submit", (evt) => {
     doc = new Income(
       transactionDetails.value,
       amount.valueAsNumber,
-      (date.valueAsDate = new Date())
+      date.valueAsDate?.toDateString() || new Date().toDateString()
     );
   } else {
     doc = new Expense(
       transactionDetails.value,
       amount.valueAsNumber,
-      (date.valueAsDate = new Date())
+      date.valueAsDate?.toDateString() || new Date().toDateString()
     );
   }
   list.render(doc, transactionType.value);

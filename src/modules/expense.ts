@@ -4,8 +4,9 @@ class Expense implements transactionProps {
   constructor(
     public description: string,
     public amount: number,
-    public date: Date
-  ) {}
+    public date: string
+  ) // public date: Date
+  {}
 }
 
 export default Expense;
