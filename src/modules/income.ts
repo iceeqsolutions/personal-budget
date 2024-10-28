@@ -1,10 +1,10 @@
-import { amountProp } from "../interfaces/amountProp";
+import { transactionProps } from "../interfaces/transactionProps.js";
 
-class Income implements amountProp {
+class Income implements transactionProps {
   constructor(
     public description: string,
     public amount: number,
-    public date: string
+    public date: Date
   ) {}
 }
 
