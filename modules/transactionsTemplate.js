@@ -6,8 +6,8 @@ export class TransactionsTemplate {
         const li = document.createElement("li");
         const h3 = document.createElement("h3");
         const p = document.createElement("p");
-        h3.textContent = heading;
-        p.textContent = `${transaction.description} - ${transaction.amount}€ - ${transaction.date}`;
+        h3.textContent = `${heading} - ${transaction.date}`;
+        p.textContent = `${transaction.description} - ${transaction.amount}€`;
         li.append(h3);
         li.append(p);
         this.container.prepend(li);
