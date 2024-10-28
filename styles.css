@@ -23,7 +23,8 @@ form,
 select,
 input,
 textarea,
-button {
+button,
+.transactionLedger {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -111,6 +112,22 @@ form {
   flex-direction: column;
   background-color: rgba(51, 51, 51, 0.8);
   border-radius: 10px;
+  max-height: 600px;
   height: 80%;
   width: 80vw;
+  padding: 10px 20px;
+  overflow: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: rgb(255, 136, 0);
+}
+p {
+  font-size: 0.75rem;
 }
