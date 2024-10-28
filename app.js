@@ -6,7 +6,10 @@ const transactionDetails = document.querySelector("#transactionDetails");
 const amount = document.querySelector("#amount");
 // list template instance
 const ul = document.querySelector("ul");
-console.log(form, transactionType, date, transactionDetails, amount, ul);
+form === null || form === void 0 ? void 0 : form.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    console.log(transactionType.value, date.valueAsDate, transactionDetails.value, amount.valueAsNumber);
+});
 export {};
 /* let salaryFebruary = new Income("February salary", 3000, "2021-02-28");
 let salaryMarch = new Income("March salary", 3000, "2021-03-31");
