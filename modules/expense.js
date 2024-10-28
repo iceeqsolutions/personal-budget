@@ -1,8 +1,8 @@
 class Expense {
-    constructor(description, amount, dueDate) {
+    constructor(description, amount, date) {
         this.description = description;
         this.amount = amount;
-        this.dueDate = dueDate;
+        this.date = date;
     }
 }
 export default Expense;
