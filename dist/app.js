@@ -22,10 +22,4 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", (evt
         doc = new Expense(transactionDetails.value, amount.valueAsNumber, ((_b = date.valueAsDate) === null || _b === void 0 ? void 0 : _b.toDateString()) || new Date().toDateString());
     }
     list.render(doc, transactionType.value);
-    //   console.log(
-    //     transactionType.value,
-    //     date.valueAsDate,
-    //     transactionDetails.value,
-    //     amount.valueAsNumber
-    //   );
 });

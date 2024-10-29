@@ -36,10 +36,4 @@ form?.addEventListener("submit", (evt) => {
     );
   }
   list.render(doc, transactionType.value);
-  //   console.log(
-  //     transactionType.value,
-  //     date.valueAsDate,
-  //     transactionDetails.value,
-  //     amount.valueAsNumber
-  //   );
 });

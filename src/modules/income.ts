@@ -5,8 +5,7 @@ class Income implements transactionProps {
     public description: string,
     public amount: number,
     public date: string
-  ) // public date: Date
-  {}
+  ) {}
 }
 
 export default Income;
