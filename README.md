@@ -1,6 +1,6 @@
 # Personal Budget - Simple TypeScript demo containing a TS interface and modules.
 
-![](./dist/images/personalBudget.png)
+![](./dist/images/personalBudget.jpg)
 
 <p align="center">
   TypeScript Demo by <a href="https://iceeqsolutions.fi/">iCeeqSolutions</a>
@@ -16,7 +16,7 @@ We've added two separate modules - income and expense - that are being utilized 
 
 ## Demo
 
-👁️ [Live Demo](https://)
+👁️ [Live Demo](https://iceeqsolutions.github.io/personal-budget/)
 
 ## Built with
 
