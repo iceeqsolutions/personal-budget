@@ -31,6 +31,10 @@ button,
   color: #fff;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 select,
 input,
 textarea,
@@ -44,6 +48,7 @@ button {
 
 button {
   background-color: rgb(255, 136, 0);
+  width: 135px;
   cursor: pointer;
 }
 
@@ -130,4 +135,73 @@ h3 {
 }
 p {
   font-size: 0.75rem;
+}
+
+@media screen and (max-width: 830px) {
+  form {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  form {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  form {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  form {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .inputContainer {
+    height: 50vh;
+  }
+  .topFields {
+    flex-direction: column;
+    align-items: start;
+  }
+  div.topFields > div.selectField,
+  div.topFields > div.field {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  div.topFields > div.field {
+    min-width: 265px;
+    justify-content: space-between;
+  }
+  div.bottomFields > div.field {
+    display: flex;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #amount {
+    width: 100px;
+  }
+  .transactionLedger {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bottomFields {
+    flex-direction: column;
+  }
+  div.bottomFields > div.field {
+    padding-left: 5px;
+  }
+  button {
+    min-width: 210px;
+  }
 }
